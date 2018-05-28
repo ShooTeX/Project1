@@ -23,7 +23,7 @@
   <nav class="uk-navbar-container" uk-navbar uk-sticky uk-scrollspy-nav="closest: li; scroll: true">
     <div class="uk-navbar-left">
 
-	  <img src="assets/logo3.svg" width="90" height="60" alt="" uk-svg>
+	  <a href="#home"><img src="assets/logo.png" width="90" height="60" alt="" class="uk-margin-left"></a>
       <ul class="uk-navbar-nav">
         <li>
           <a href="#home"></a>
@@ -32,7 +32,7 @@
           <a href="#kleingartenverein" uk-scroll>Kleingartenverein <span uk-icon="icon: chevron-down"></span></a>
           <div class="uk-navbar-dropdown">
             <ul class="uk-nav uk-navbar-dropdown-nav">
-              <li><a href="#" uk-scroll>Verein</a></li>
+              <li><a href="#verein" uk-scroll>Verein</a></li>
               <li><a href="#" uk-scroll>Termine</a></li>
               <li><a href="#parzellenverwaltung" uk-scroll>Parzellenverwaltung</a></li>
             </ul>
@@ -43,8 +43,8 @@
           <div class="uk-navbar-dropdown">
             <ul class="uk-nav uk-navbar-dropdown-nav">
               <li><a href="#" uk-scroll>UG Was ist das?</a></li>
-              <li><a href="#" uk-scroll>UG im KGV</a></li>
-              <li><a href="#" uk-scroll>Angebote/Termine</a></li>
+              <li><a href="#ugimkgv" uk-scroll>UG im KGV</a></li>
+              <li><a href="#ugtermine" uk-scroll>Angebote/Termine</a></li>
             </ul>
           </div>
         </li>
@@ -57,8 +57,8 @@
 
     <div class="uk-navbar-right">
       <a href="https://www.facebook.com/deceivingisbelieving/">
-                <img data-src="assets/facebook.png" width="20" height="20" alt="" uk-img>
-            </a>
+        <img data-src="assets/facebook.png" width="20" height="20" alt="" uk-img>
+      </a>
     </div>
   </nav>
 
@@ -74,8 +74,8 @@
       </p>
     </div>
     <p uk-margin>
-      <button class="uk-button uk-button-primary">URBAN GARDENING</button>
-      <button class="uk-button uk-button-primary">PARZELLE MIETEN</button>
+      <a class="uk-button uk-button-primary" href="#urbangardening" uk-scroll>URBAN GARDENING</a>
+      <a class="uk-button uk-button-primary" href="#parzellenverwaltung" uk-scroll>PARZELLE MIETEN</a>
     </p>
   </div>
 
@@ -655,14 +655,14 @@
       </p>
     </div>
     <p uk-margin>
-      <button class="uk-button uk-button-primary">UG - IM KGV</button>
-      <button class="uk-button uk-button-primary">ANGEBOTE/TERMINE</button>
+      <a class="uk-button uk-button-primary" href="#ugimkgv" uk-scroll>UG - IM KGV</a>
+      <a class="uk-button uk-button-primary" href="#ugtermine" uk-scroll>ANGEBOTE/TERMINE</a>
     </p>
   </div>
 
   <hr class="uk-divider-icon">
 
-  <div id="urbangardening" class="uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-background-cover" data-src="assets/urbangardening1.jpg" uk-img uk-parallax="bgy: -500">
+  <div id="ugimkgv" class="uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-background-cover" data-src="assets/urbangardening1.jpg" uk-img uk-parallax="bgy: -500">
     <div class="uk-card uk-card-default uk-card-body uk-width-1-3@m">
       <h3 class="uk-card-title">Urban Gardening im Kleingartenverein</h3>
       <p>
@@ -682,7 +682,7 @@
           <a class="uk-accordion-title" href="#">„Urban Gardening“ in Schnelsen</a>
           <div class="uk-accordion-content">
             <p>
-              Andere Städte wie London oder Berlin haben zwar deutlich mehr urbane Garten-Projekte als Hamburg, aber auch in Hamburg gibt es mittlerweile mehr als ein Dutzend solcher Projekte in den verschiedensten Stadtteilen - so auch in Schnelsen. Hier haben wir es uns zur Aufgabe gemacht, den auf der A7 entstandenen Deckel für verschiedene Zielgruppen nutzbar zu machen und den Stadtteil damit sowohl attraktiver als auch umweltbewusster zu gestalten. Ein Stadtteil von Menschen für Menschen, jung und alt, die gemeinsam Lust haben, Natur innovativ nutzbar zu machen. Daher laden wir Kindergärten, Schulen, Nachbarn, Familien und alle an dieser Idee interessierten Menschen dazu ein, sich in unserem Verein [zur Unterseite Kleingartenverein verlinken] zu engagieren.
+              Andere Städte wie London oder Berlin haben zwar deutlich mehr urbane Garten-Projekte als Hamburg, aber auch in Hamburg gibt es mittlerweile mehr als ein Dutzend solcher Projekte in den verschiedensten Stadtteilen - so auch in Schnelsen. Hier haben wir es uns zur Aufgabe gemacht, den auf der A7 entstandenen Deckel für verschiedene Zielgruppen nutzbar zu machen und den Stadtteil damit sowohl attraktiver als auch umweltbewusster zu gestalten. Ein Stadtteil von Menschen für Menschen, jung und alt, die gemeinsam Lust haben, Natur innovativ nutzbar zu machen. Daher laden wir Kindergärten, Schulen, Nachbarn, Familien und alle an dieser Idee interessierten Menschen dazu ein, sich in unserem <a class="uk-link-text" href="#kleingartenverein">Verein</a> zu engagieren.
             </p>
           </div>
         </li>
@@ -693,7 +693,9 @@
     </a>
   </div>
 
-  <div id="urbangardening" class="uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-background-cover" data-src="assets/urbangardening1.jpg" uk-img uk-parallax="bgy: -500">
+  <hr class="uk-divider-icon">
+
+  <div id="ugtermine" class="uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-background-cover" data-src="assets/urbangardening1.jpg" uk-img uk-parallax="bgy: -500">
     <div class="uk-margin-large-top uk-card uk-card-default uk-card-body uk-width-1-2@m">
       <h3 class="uk-card-title">Angebote/Termine</h3>
       <div class="uk-cover-container">
@@ -702,7 +704,9 @@
     </div>
   </div>
 
-  <div id="urbangardening" class="uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-background-cover" data-src="assets/gartenzwerg.jpg" uk-img uk-parallax="bgy: -500">
+  <hr class="uk-divider-icon">
+
+  <div id="impressum" class="uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-background-cover" data-src="assets/gartenzwerg.jpg" uk-img uk-parallax="bgy: -500">
     <div class="uk-margin-large-top uk-card uk-card-default uk-card-body uk-width-1-3@m">
       <h3 class="uk-card-title">Impressum</h3>
       <p>
@@ -730,8 +734,8 @@
 	</div>
 
 	<div class="footer-links">
-		<a class="footer-link">Kontakt</a>
-		<a class="footer-link">Impressum</a>
+		<a class="footer-link" href="#kontakt">Kontakt</a>
+		<a class="footer-link" href="#impressum">Impressum</a>
 	</div>
   </footer>
 </body>

@@ -2,665 +2,698 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<title>GARDEN7</title>
+  <meta charset="utf-8">
+  <title>GARDEN7</title>
 
-	<!-- UIkit CSS -->
-	<link rel="stylesheet" href="css/uikit.css">
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="css/uikit.css">
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/master.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/master.css">
 
-	<!-- UIkit JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.2/js/uikit.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.2/js/uikit-icons.min.js"></script>
+  <!-- UIkit JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.2/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.2/js/uikit-icons.min.js"></script>
 
-	<!-- Font -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
-	<nav class="uk-navbar-container" uk-navbar uk-sticky>
-		<div class="uk-navbar-left">
+  <nav class="uk-navbar-container" uk-navbar uk-sticky uk-scrollspy-nav="closest: li; scroll: true">
+    <div class="uk-navbar-left">
 
-			<img src="assets/logo3.svg" width="90" height="60" alt="" uk-svg>
-			<ul class="uk-navbar-nav">
-				<li>
-					<a href="#kleingartenverein" uk-scroll>Kleingartenverein
-						<span uk-icon="icon: chevron-down"></span>
-					</a>
-					<div class="uk-navbar-dropdown">
-						<ul class="uk-nav uk-navbar-dropdown-nav">
-							<li>
-								<a href="#" uk-scroll>Verein</a>
-							</li>
-							<li>
-								<a href="#" uk-scroll>Termine</a>
-							</li>
-							<li>
-								<a href="#parzellenverwaltung" uk-scroll>Parzellenverwaltung</a>
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li>
-					<a href="#" uk-scroll>Urban Gardening
-						<span uk-icon="icon: chevron-down"></span>
-					</a>
-					<div class="uk-navbar-dropdown">
-						<ul class="uk-nav uk-navbar-dropdown-nav">
-							<li>
-								<a href="#" uk-scroll>UG Was ist das?</a>
-							</li>
-							<li>
-								<a href="#" uk-scroll>UG im KGV</a>
-							</li>
-							<li>
-								<a href="#" uk-scroll>Angebote/Termine</a>
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li>
-					<a href="#" uk-scroll>Galerie</a>
-				</li>
-			</ul>
+      <img src="assets/logo3.svg" width="90" height="60" alt="" uk-svg>
+      <ul class="uk-navbar-nav">
+        <li>
+          <a href="#home"></a>
+        </li>
+        <li>
+          <a href="#kleingartenverein" uk-scroll>Kleingartenverein <span uk-icon="icon: chevron-down"></span></a>
+          <div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+              <li><a href="#" uk-scroll>Verein</a></li>
+              <li><a href="#" uk-scroll>Termine</a></li>
+              <li><a href="#parzellenverwaltung" uk-scroll>Parzellenverwaltung</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#urbangardening" uk-scroll>Urban Gardening <span uk-icon="icon: chevron-down"></span></a>
+          <div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+              <li><a href="#" uk-scroll>UG Was ist das?</a></li>
+              <li><a href="#" uk-scroll>UG im KGV</a></li>
+              <li><a href="#" uk-scroll>Angebote/Termine</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" uk-scroll>Galerie</a>
+        </li>
+      </ul>
 
-		</div>
+    </div>
 
-		<div class="uk-navbar-right">
-			<a href="https://www.facebook.com/deceivingisbelieving/">
-				<img data-src="assets/facebook.png" width="20" height="20" alt="" uk-img>
-			</a>
-		</div>
-	</nav>
+    <div class="uk-navbar-right">
+      <a href="https://www.facebook.com/deceivingisbelieving/">
+                <img data-src="assets/facebook.png" width="20" height="20" alt="" uk-img>
+            </a>
+    </div>
+  </nav>
 
-	<div id="home" class="uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-background-cover uk-light"
-	 data-src="assets/deckel_luftbild.jpg" uk-img uk-parallax="bgy: -500">
-		<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-			<h3 class="uk-card-title">Wir sind da für unsere Mitglieder und für unsere Nachbarn.</h3>
-			<p>
-				<i>"Ein Menschheitstraum: Die Erde in einem blühenden Garten zu verwandeln. Wer Träume verwirklichen will, muss tiefer träumen
-					und wacher sein als andere."</i>
-			</p>
-			<p>
-				<b>Karl Foerster</b>
-			</p>
-		</div>
-		<div class="uk-button-group">
-			<button class="uk-button uk-button-primary">URBAN GARDENING</button>
-			<button class="uk-button uk-button-primary">PARZELLE MIETEN</button>
-		</div>
-	</div>
+  <div id="home" class="uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-background-cover" data-src="assets/deckel_luftbild.jpg" uk-img uk-parallax="bgy: -500">
+    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+      <h3 class="uk-card-title">Wir sind da für unsere Mitglieder und für unsere Nachbarn.</h3>
+      <p>
+        <i>"Ein Menschheitstraum: Die Erde in einem blühenden Garten zu verwandeln. Wer Träume verwirklichen will, muss
+                    tiefer träumen und wacher sein als andere."</i>
+      </p>
+      <p>
+        <b>Karl Foerster</b>
+      </p>
+    </div>
+    <div class="uk-button-group">
+      <button class="uk-button uk-button-primary">URBAN GARDENING</button>
+      <button class="uk-button uk-button-primary">PARZELLE MIETEN</button>
+    </div>
+  </div>
 
-	<div id="kleingartenverein" class="uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-	 data-src="assets/blumen.jpg" uk-img uk-parallax="bgy: -500">
-		<div class="uk-card uk-card-default">
-			<div class="uk-card-media-top">
-				<img src="assets/gerd_gaertner.jpg" alt="Gerd Gärtner">
-			</div>
-			<div class="uk-card-body">
-				<h3 class="uk-card-title">Gerd Gärtner</h3>
-				<p class="">Vereinsvorsitzender</p>
-			</div>
-		</div>
+  <hr class="uk-divider-icon">
 
-		<div class="uk-margin-large-left uk-card uk-card-default uk-card-body uk-width-1-4@m">
-			<h3 class="uk-card-title">Kleingartenverein</h3>
-			<p>
-				Wir begrüßen Euch und Sie herzlich auf der Website des Kleingartenvereins garden7 – dem schnellsten Kleingartenverein Hamburgs
-			</p>
-			<p>
-				Unser Kleingartenverein wurde durch die A7, einer der meistbefahrenen Straßenabschnitte Deutschlands , erst möglich. Wo täglich
-				mehr als 113000 Autos und LKWs fahren, soll eine Kleingartenidylle entstehen? Wie passt das zusammen – geht das überhaupt?
-			</p>
-			<p>
-				Ja das geht, aber natürlich nicht einfach so. Denn gerade der Bodenaufbau und die Bodenqualität müssen der gewünschten Nutzung
-				durch einen Kleingartenverein gerecht werden. Der Boden ist frei von Altlasten – Sie können sich bedenkenlos und Ihre
-				selbst angebauten Obstsorten schmecken lasse!
-			</p>
-			<p>
-				Interessieren Sie sich für freie Parzellen oder das Vereinsleben, so sind Sie hier richtig.
-			</p>
-			<p>
-				<b>Gerd Gärtner (Vereinsvorsitzender)</b>
-			</p>
-		</div>
-	</div>
+  <div id="kleingartenverein" class="uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="assets/blumen.jpg" uk-img uk-parallax="bgy: -500">
+    <div class="uk-card uk-card-default">
+      <div class="uk-card-media-top">
+        <img src="assets/gerd_gaertner.jpg" alt="Gerd Gärtner">
+      </div>
+      <div class="uk-card-body">
+        <h3 class="uk-card-title">Gerd Gärtner</h3>
+        <p class="">Vereinsvorsitzender</p>
+      </div>
+    </div>
 
-	<div id="parzellenverwaltung" class="uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-	 data-src="assets/gemuesegarten.jpg" uk-img uk-parallax="bgy: -500">
-		<div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
-			<h3 class="uk-card-title">Parzellenverwaltung</h3>
-			<p>
-				Schaffen Sie sich Ihr eigenes kleines Paradies. Hier finden Sie Ihr eigenes kleines Fleckchen Erde, auf dem Sie Ihre Träume
-				von einem Stückchen Natur mitten in der Stadt verwirklichen können. Fahren Sie mit der Maus über die freien Parzellen
-				und erfahren Sie, was Sie dort erwartet.
-			</p>
-		</div>
+    <div class="uk-margin-large-left uk-card uk-card-default uk-card-body uk-width-1-4@m">
+      <h3 class="uk-card-title">Kleingartenverein</h3>
+      <p>
+        Wir begrüßen Euch und Sie herzlich auf der Website des Kleingartenvereins garden7 – dem schnellsten Kleingartenverein Hamburgs
+      </p>
+      <p>
+        Unser Kleingartenverein wurde durch die A7, einer der meistbefahrenen Straßenabschnitte Deutschlands , erst möglich. Wo täglich mehr als 113000 Autos und LKWs fahren, soll eine Kleingartenidylle entstehen? Wie passt das zusammen – geht das überhaupt?
+      </p>
+      <p>
+        Ja das geht, aber natürlich nicht einfach so. Denn gerade der Bodenaufbau und die Bodenqualität müssen der gewünschten Nutzung durch einen Kleingartenverein gerecht werden. Der Boden ist frei von Altlasten – Sie können sich bedenkenlos und Ihre selbst angebauten Obstsorten schmecken lasse!
+      </p>
+      <p>
+        Interessieren Sie sich für freie Parzellen oder das Vereinsleben, so sind Sie hier richtig.
+      </p>
+      <p>
+        <b>Gerd Gärtner (Vereinsvorsitzender)</b>
+      </p>
+    </div>
+  </div>
 
-		<div class="uk-margin-large-left uk-card uk-card-default uk-card-body uk-width-1-3@m">
-			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 819.2 913.5"
-			 style="enable-background:new 0 0 819.2 913.5;" xml:space="preserve">
+  <hr class="uk-divider-icon">
 
-				<g id="Kompass">
-					<circle class="st0" cx="108.5" cy="235" r="34" />
-					<g>
-						<path class="st1" d="M118.4,195.2h-4.4l-11.2-17.8v17.8h-4.4v-25.1h4.4l11.2,17.9v-17.9h4.3V195.2z" />
-					</g>
-					<g>
-						<path class="st1" d="M165.8,236.3h-10.3v7.7h12v3.5h-16.4v-25.1h16.3v3.5h-11.9v6.9h10.3V236.3z" />
-					</g>
-					<g>
-						<path class="st1" d="M113.5,293.8c0-1.1-0.4-2-1.2-2.5c-0.8-0.6-2.2-1.2-4.2-1.8c-2-0.6-3.6-1.3-4.8-2c-2.3-1.4-3.4-3.3-3.4-5.6
+  <div id="parzellenverwaltung" class="uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="assets/gemuesegarten.jpg" uk-img uk-parallax="bgy: -500">
+    <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
+      <h3 class="uk-card-title">Parzellenverwaltung</h3>
+      <p>
+        Schaffen Sie sich Ihr eigenes kleines Paradies. Hier finden Sie Ihr eigenes kleines Fleckchen Erde, auf dem Sie Ihre Träume von einem Stückchen Natur mitten in der Stadt verwirklichen können. Fahren Sie mit der Maus über die freien Parzellen und erfahren Sie, was Sie dort erwartet.
+      </p>
+    </div>
+
+    <div class="uk-margin-large-left uk-card uk-card-default uk-card-body uk-width-1-3@m">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 viewBox="0 0 819.2 913.5" style="enable-background:new 0 0 819.2 913.5;" xml:space="preserve">
+
+        <g id="Kompass">
+        	<circle class="st0" cx="108.5" cy="235" r="34"/>
+        	<g>
+        		<path class="st1" d="M118.4,195.2h-4.4l-11.2-17.8v17.8h-4.4v-25.1h4.4l11.2,17.9v-17.9h4.3V195.2z"/>
+        	</g>
+        	<g>
+        		<path class="st1" d="M165.8,236.3h-10.3v7.7h12v3.5h-16.4v-25.1h16.3v3.5h-11.9v6.9h10.3V236.3z"/>
+        	</g>
+        	<g>
+        		<path class="st1" d="M113.5,293.8c0-1.1-0.4-2-1.2-2.5c-0.8-0.6-2.2-1.2-4.2-1.8c-2-0.6-3.6-1.3-4.8-2c-2.3-1.4-3.4-3.3-3.4-5.6
         			c0-2,0.8-3.7,2.5-5c1.6-1.3,3.8-2,6.4-2c1.7,0,3.3,0.3,4.7,1c1.4,0.6,2.4,1.6,3.2,2.7c0.8,1.2,1.2,2.5,1.2,4h-4.3
         			c0-1.3-0.4-2.3-1.2-3.1c-0.8-0.7-2-1.1-3.5-1.1c-1.4,0-2.5,0.3-3.3,0.9c-0.8,0.6-1.2,1.5-1.2,2.5c0,0.9,0.4,1.7,1.3,2.3
         			c0.8,0.6,2.2,1.2,4.2,1.8c2,0.6,3.5,1.2,4.7,2c1.2,0.7,2,1.6,2.6,2.5s0.8,2.1,0.8,3.4c0,2.1-0.8,3.8-2.4,5
         			c-1.6,1.2-3.8,1.9-6.5,1.9c-1.8,0-3.5-0.3-5-1c-1.5-0.7-2.7-1.6-3.5-2.8s-1.3-2.6-1.3-4.1h4.4c0,1.4,0.5,2.5,1.4,3.3
-        			c0.9,0.8,2.3,1.2,4,1.2c1.5,0,2.7-0.3,3.4-0.9C113.1,295.6,113.5,294.8,113.5,293.8z" />
-					</g>
-					<g>
-						<path class="st1" d="M59.5,240.6l3.9-18.9h4.3l-5.8,25.1h-4.2l-4.8-18.3L48,246.8h-4.2l-5.8-25.1h4.3l3.9,18.8l4.8-18.8h3.6
-        			L59.5,240.6z" />
-					</g>
-				</g>
-				<g id="Hintergrund">
-					<polyline class="st2" points="337.5,2 2,633.8 509.8,909.5 821.2,130 337.5,2 	" />
-					<polyline class="st3" points="117.3,417.2 71.3,502.8 294.5,624 304.4,607.8 233.1,527.3 238,482.9 117.3,417.2 	" />
-					<polyline class="st4" points="238,482.9 339.7,537.4 304.4,607.8 233.1,527.3 238,482.9 	" />
-					<polyline class="st3" points="324.3,623.5 279,705.5 324.3,730 300,778.3 361.2,812.5 355,825.5 509.8,909.5 538.2,840.3
-        		422.8,781.2 324.3,623.5 	" />
-					<polyline class="st3" points="13.5,612 8.8,619.8 231.2,742 236,733 13.5,612 	" />
-					<polygon class="st5" points="8.8,619.8 2,633.8 224.5,753 231.2,742 	" />
-					<polygon class="st6" points="283.8,712 268.8,727.3 286.4,745.7 291.5,740.3 304.4,753 318.3,742 	" />
-					<polygon class="st5" points="300,778.3 293.6,790 355,825.5 361.2,812.5 	" />
-				</g>
-				<g id="P65_1_">
-					<polygon class="st7" points="375.5,13 340,78 373,96 413.4,20.6 	" />
-				</g>
-				<g id="P64">
-					<polygon class="st7" points="337.5,2 304.5,66 337.5,84 375.5,13 	" />
-				</g>
-				<g id="P66">
-					<polygon class="st7" points="413.4,20.6 448.2,31.7 404.8,114.3 373,96 	" />
-				</g>
-				<g id="P67">
-					<polygon class="st7" points="448.2,31.7 484.8,40.3 436.2,132.3 404.8,114.3 	" />
-				</g>
-				<g id="P71">
-					<polyline class="st7" points="484.8,40.3 538.8,54.5 511.8,111 461.7,84 484.8,40.3 	" />
-				</g>
-				<g id="P72">
-					<polyline class="st7" points="538.8,54.5 582.2,67.4 551.5,124.3 515.1,104.1 538.8,54.5 	" />
-				</g>
-				<g id="P73">
-					<polygon class="st7" points="582.2,67.4 612.8,75.7 582.2,140.3 551.5,124.3 	" />
-				</g>
-				<g id="P74">
-					<polygon class="st7" points="612.8,75.7 654.3,86 611.8,167.5 576.3,149.5 	" />
-				</g>
-				<g id="P75">
-					<polygon class="st7" points="654.3,86 689.3,95.3 642.2,183.3 611.8,167.5 	" />
-				</g>
-				<g id="P78">
-					<polygon class="st7" points="689.3,95.3 763.5,114.3 732.5,173.3 667,136.9 	" />
-				</g>
-				<g id="P79">
-					<polygon class="st7" points="763.5,114.3 821.2,130 792.3,205.3 732.5,173.3 	" />
-				</g>
-				<g id="P76">
-					<polygon class="st7" points="667,136.9 701.1,155.9 677.2,202 642.2,183.3 	" />
-				</g>
-				<g id="P77">
-					<polygon class="st7" points="701.1,155.9 729,171.4 705.5,216.7 677.2,202 	" />
-				</g>
-				<g id="P80">
-					<polygon class="st7" points="735.9,175.2 712.2,219.3 772.8,252 792.3,205.3 	" />
-				</g>
-				<g id="P68">
-					<polygon class="st7" points="494.6,101.7 469.8,149.5 436.2,132.3 461.7,84 	" />
-				</g>
-				<g id="P69">
-					<polygon class="st7" points="494.6,101.7 525.5,119.8 500.3,167.5 469.8,149.5 	" />
-				</g>
-				<g id="P70">
-					<polygon class="st7" points="525.5,119.8 554,135.8 529,183.3 500.3,167.5 	" />
-				</g>
-				<g id="P143">
-					<polygon class="st7" points="333.3,605.7 402.8,641.7 372.3,699 324.3,623.5 	" />
-				</g>
-				<g id="P145">
-					<polygon class="st7" points="357.8,559.1 333.3,605.7 368,622.5 393.3,578 	" />
-				</g>
-				<g id="P144">
-					<polygon class="st7" points="423.3,593.8 393.3,578 368,622.5 399.3,639.5 	" />
-				</g>
-				<g id="P141">
-					<polygon class="st7" points="431.8,598 407.5,642.6 437.8,660.3 461.8,613.8 	" />
-				</g>
-				<g id="P142">
-					<polygon class="st7" points="402.8,641.7 437.8,660.3 414.8,703.2 379.9,684.7 	" />
-				</g>
-				<g id="P146">
-					<polygon class="st7" points="379.9,684.7 448.7,721.2 419.2,775.3 372.3,699 	" />
-				</g>
-				<g id="P139">
-					<polygon class="st7" points="437.8,660.3 414.8,703.2 445.7,718.8 467.3,675 	" />
-				</g>
-				<g id="P140">
-					<polygon class="st7" points="492.5,629.1 461.8,613.8 437.8,660.3 467.3,675 	" />
-				</g>
-				<g id="P137">
-					<polygon class="st7" points="500.7,633.8 533.5,651 509.8,697.7 475.7,680 	" />
-				</g>
-				<g id="P138">
-					<polygon class="st7" points="475.7,680 453.2,722.5 486.2,740.3 509.8,697.7 	" />
-				</g>
-				<g id="P147">
-					<polygon class="st7" points="448.7,721.2 486.2,740.3 455.8,797.5 422.8,781.2 419.2,775.3 	" />
-				</g>
-				<g id="P148">
-					<polygon class="st7" points="486.2,740.3 521,758.7 491,816.2 455.8,797.5 	" />
-				</g>
-				<g id="P135">
-					<polygon class="st7" points="540.3,713.7 518.2,757 486.2,740.3 509.8,697.7 	" />
-				</g>
-				<g id="P136">
-					<polygon class="st7" points="564.7,667.7 533.5,651 509.8,697.7 540.3,713.7 	" />
-				</g>
-				<g id="P149">
-					<polygon class="st7" points="538.2,840.3 562.3,780 521,758.7 491,816.2 	" />
-				</g>
-				<g id="P134">
-					<polygon class="st7" points="562.3,780 580.8,734.8 548.3,717.7 526,760.7 	" />
-				</g>
-				<g id="P133">
-					<polygon class="st7" points="603.5,677.5 580.8,734.8 548.3,717.7 577.3,663.6 	" />
-				</g>
-				<g id="P126">
-					<polygon class="st7" points="387,504.9 362.5,551.2 396.7,570 421.5,523 	" />
-				</g>
-				<g id="P127">
-					<polygon class="st7" points="452.5,539.3 428.3,586 396.7,570 421.5,523 	" />
-				</g>
-				<g id="P128">
-					<polygon class="st7" points="486.9,556.6 463,604 428.3,586 452.5,539.3 	" />
-				</g>
-				<g id="P129">
-					<polygon class="st7" points="518.8,573.6 494.7,619.8 463,604 486.9,556.6 	" />
-				</g>
-				<g id="P130">
-					<polygon class="st7" points="551.4,591 527,637.8 494.7,619.8 518.8,573.6 	" />
-				</g>
-				<g id="P131">
-					<polygon class="st7" points="583.1,607.8 559,654 527,637.8 551.4,591 	" />
-				</g>
-				<g id="P132">
-					<polygon class="st7" points="622.6,627.9 603.5,677.5 559,654 583.1,607.8 	" />
-				</g>
-				<g id="P125">
-					<polygon class="st7" points="412.3,458.8 387,504.9 421.5,523 446.6,476.5 	" />
-				</g>
-				<g id="P124">
-					<polygon class="st7" points="477.8,492.8 446.6,476.5 421.5,523 452.5,539.3 	" />
-				</g>
-				<g id="P123">
-					<polygon class="st7" points="513,511 477.8,492.8 452.5,539.3 486.9,556.6 	" />
-				</g>
-				<g id="P122">
-					<polygon class="st7" points="544.2,527.3 513,511 486.9,556.6 518.8,573.6 	" />
-				</g>
-				<g id="P121">
-					<polygon class="st7" points="576,544.3 544.2,527.3 518.8,573.6 551.4,591 	" />
-				</g>
-				<g id="P120">
-					<polygon class="st7" points="576,544.3 608.3,560.8 583.1,607.8 551.4,591 	" />
-				</g>
-				<g id="P119">
-					<polygon class="st7" points="610.1,557.3 583.1,607.8 622.6,627.9 644.1,575.6 	" />
-				</g>
-				<g id="P112">
-					<polygon class="st7" points="440.5,404.6 416.1,450.5 450.4,468.6 475.2,422.8 	" />
-				</g>
-				<g id="P113">
-					<polygon class="st7" points="506.5,438.8 482.1,485.3 450.4,468.6 475.2,422.8 	" />
-				</g>
-				<g id="P114">
-					<polygon class="st7" points="540.8,456.7 516.4,502.9 482.1,485.3 506.5,438.8 	" />
-				</g>
-				<g id="P115">
-					<polygon class="st7" points="572,473 548.4,519.6 516.4,502.9 540.8,456.7 	" />
-				</g>
-				<g id="P116">
-					<polygon class="st7" points="604.7,490 581,536.6 548.4,519.6 572,473 	" />
-				</g>
-				<g id="P117">
-					<polygon class="st7" points="637,507 612,553.4 581,536.6 604.7,490 	" />
-				</g>
-				<g id="P118">
-					<polygon class="st7" points="665.7,521.7 644.1,575.6 610.1,557.3 637,507 	" />
-				</g>
-				<g id="P111">
-					<polygon class="st7" points="465.5,358.8 500.2,376.5 475.2,422.8 440.5,404.6 	" />
-				</g>
-				<g id="P110">
-					<polygon class="st7" points="530.8,393 500.2,376.5 475.2,422.8 506.5,438.8 	" />
-				</g>
-				<g id="P109">
-					<polygon class="st7" points="565.8,411.3 530.8,393 506.5,438.8 540.8,456.7 	" />
-				</g>
-				<g id="P108">
-					<polygon class="st7" points="597.2,427.3 565.8,411.3 540.8,456.7 572,473 	" />
-				</g>
-				<g id="P107">
-					<polygon class="st7" points="629.3,444.7 597.2,427.3 572,473 604.7,490 	" />
-				</g>
-				<g id="P106">
-					<polygon class="st7" points="661,461 629.3,444.7 604.7,490 637,507 	" />
-				</g>
-				<g id="P105">
-					<polygon class="st8" points="688.3,465 665.7,521.7 637,507 665.7,453.1 	" />
-				</g>
-				<g id="P99">
-					<polygon class="st7" points="494,303.5 469.7,350.2 503.8,368.8 529,322.2 	" />
-				</g>
-				<g id="P100">
-					<polygon class="st7" points="559.3,338.2 535.2,385.2 503.8,368.8 529,322.2 	" />
-				</g>
-				<g id="P101">
-					<polygon class="st7" points="593.8,356.5 569.7,403.2 535.2,385.2 559.3,338.2 	" />
-				</g>
-				<g id="P102">
-					<polygon class="st7" points="626.2,372.8 601.7,419.2 569.7,403.2 593.8,356.5 	" />
-				</g>
-				<g id="P103">
-					<polygon class="st7" points="658.7,389.5 634,436.3 601.7,419.2 626.2,372.8 	" />
-				</g>
-				<g id="_x31_04">
-					<polygon class="st7" points="707.9,416 688.3,465 634,436.3 658.7,389.5 	" />
-				</g>
-				<g id="P98">
-					<polygon class="st7" points="519.2,257 494,303.5 529,322.2 553.8,275.5 	" />
-				</g>
-				<g id="P97">
-					<polygon class="st7" points="585.3,291.7 553.8,275.5 529,322.2 559.3,338.2 	" />
-				</g>
-				<g id="P96">
-					<polygon class="st7" points="619.7,309.3 585.3,291.7 559.3,338.2 593.8,356.5 	" />
-				</g>
-				<g id="P95">
-					<polygon class="st7" points="651,325.7 619.7,309.3 593.8,356.5 626.2,372.8 	" />
-				</g>
-				<g id="P94">
-					<polygon class="st7" points="651,325.7 683.5,342.5 658.7,389.5 626.2,372.8 	" />
-				</g>
-				<g id="P93">
-					<polygon class="st7" points="685.2,339.3 658.7,389.5 707.9,416 729.7,362.2 	" />
-				</g>
-				<g id="P87">
-					<polygon class="st7" points="548.6,203.3 523.3,248.3 557.7,267.5 582.2,221.7 	" />
-				</g>
-				<g id="P88">
-					<polygon class="st7" points="612.8,237.7 589.5,283.2 557.7,267.5 582.2,221.7 	" />
-				</g>
-				<g id="P89">
-					<polygon class="st7" points="647.5,255.7 624.2,301.5 589.5,283.2 612.8,237.7 	" />
-				</g>
-				<g id="P90">
-					<polygon class="st7" points="679.7,272.3 655.5,318 624.2,301.5 647.5,255.7 	" />
-				</g>
-				<g id="P91">
-					<polygon class="st7" points="711.5,289.2 687.8,334.7 655.5,318 679.7,272.3 	" />
-				</g>
-				<g id="P92">
-					<polygon class="st7" points="750.3,309.3 729.7,362.2 685.2,339.3 711.5,289.2 	" />
-				</g>
-				<g id="P86_1_">
-					<polygon class="st7" points="572.5,157.7 606.8,175.2 582.2,221.7 548.6,203.3 	" />
-				</g>
-				<g id="P85">
-					<polygon class="st7" points="637.8,192 606.8,175.2 582.2,221.7 612.8,237.7 	" />
-				</g>
-				<g id="P84">
-					<polygon class="st7" points="672.5,210 637.8,192 613.5,236.4 647.5,255.7 	" />
-				</g>
-				<g id="P83">
-					<polygon class="st7" points="704,226.2 672.5,210 647.5,255.7 679.7,272.3 	" />
-				</g>
-				<g id="P82">
-					<polygon class="st7" points="736.2,242.8 704,226.2 679.7,272.3 711.5,289.2 	" />
-				</g>
-				<g id="P81">
-					<polygon class="st7" points="772.8,252 750.3,309.3 711.5,289.2 741.2,235 	" />
-				</g>
-				<g id="P63">
-					<polygon class="st7" points="304.5,66 278,114.3 312.5,133.5 337.5,84 	" />
-				</g>
-				<g id="P62">
-					<polygon class="st7" points="367.5,105.2 336.1,86.9 312.5,133.5 343,150.3 	" />
-				</g>
-				<g id="P61">
-					<polygon class="st7" points="400.3,122.7 367.5,105.2 343,150.3 375.5,168.7 	" />
-				</g>
-				<g id="P60">
-					<polygon class="st8" points="432.5,140.3 400.3,122.7 375.5,168.7 407.7,185.7 	" />
-				</g>
-				<g id="P59">
-					<polygon class="st7" points="465.4,158.5 432.5,140.3 407.7,185.7 439.8,203.3 	" />
-				</g>
-				<g id="P58">
-					<polygon class="st7" points="496.2,175.2 465.4,158.5 439.8,203.3 471.5,220.5 	" />
-				</g>
-				<g id="P57">
-					<polygon class="st7" points="525.5,190.8 496.2,175.2 471.5,220.5 500.3,236.7 	" />
-				</g>
-				<g id="P50">
-					<polygon class="st7" points="278,114.3 250.7,165.3 284.8,184.3 312.5,133.5 	" />
-				</g>
-				<g id="P51">
-					<polygon class="st7" points="312.5,133.5 287.7,180.7 318.2,197.2 343,150.3 	" />
-				</g>
-				<g id="P52">
-					<polygon class="st7" points="343,150.3 318.2,197.2 351.7,215 375.5,168.7 	" />
-				</g>
-				<g id="P53">
-					<polygon class="st7" points="375.5,168.7 351.7,215 383.2,232.3 407.7,185.7 	" />
-				</g>
-				<g id="P54">
-					<polygon class="st7" points="407.7,185.7 383.2,232.3 415.7,250 439.8,203.3 	" />
-				</g>
-				<g id="P55">
-					<polygon class="st7" points="439.8,203.3 415.7,250 446.7,266.8 471.5,220.5 	" />
-				</g>
-				<g id="P56">
-					<polygon class="st7" points="475.7,283.2 500.3,236.7 471.5,220.5 446.7,266.8 	" />
-				</g>
-				<g id="P49">
-					<polygon class="st7" points="223.8,216.8 250.7,165.3 284.8,184.3 258.3,234.3 	" />
-				</g>
-				<g id="P48">
-					<polygon class="st7" points="314.2,205 281.6,187.7 258.3,234.3 288.8,251.8 	" />
-				</g>
-				<g id="P47">
-					<polygon class="st7" points="346.8,223.2 314.2,205 288.8,251.8 321.7,269.2 	" />
-				</g>
-				<g id="P46">
-					<polygon class="st7" points="378.8,240.3 346.8,223.2 321.7,269.2 353.5,287.2 	" />
-				</g>
-				<g id="P45">
-					<polygon class="st7" points="411.5,258.2 378.8,240.3 353.5,287.2 386.3,305.2 	" />
-				</g>
-				<g id="P44">
-					<polygon class="st7" points="442.8,275.5 411.5,258.2 386.3,305.2 417.7,322.2 	" />
-				</g>
-				<g id="P43">
-					<polygon class="st7" points="472,290.2 442.8,275.5 417.7,322.2 446.7,337.5 	" />
-				</g>
-				<g id="P36">
-					<polygon class="st7" points="223.8,216.8 197.5,265.6 231.5,284.2 258.3,234.3 	" />
-				</g>
-				<g id="P37">
-					<polygon class="st7" points="258.3,234.3 288.8,251.8 265.2,296.8 234,280.2 	" />
-				</g>
-				<g id="P38">
-					<polygon class="st7" points="288.8,251.8 321.7,269.2 297.7,314.5 265.2,296.8 	" />
-				</g>
-				<g id="P39">
-					<polygon class="st7" points="321.7,269.2 353.5,287.2 330,332.3 297.7,314.5 	" />
-				</g>
-				<g id="P40">
-					<polygon class="st7" points="353.5,287.2 386.3,305.2 362.3,350 330,332.3 	" />
-				</g>
-				<g id="P41">
-					<polygon class="st7" points="386.3,305.2 417.7,322.2 393.8,367.3 362.3,350 	" />
-				</g>
-				<g id="P42">
-					<polygon class="st7" points="422.7,382.8 446.7,337.5 417.7,322.2 393.8,367.3 	" />
-				</g>
-				<g id="P35">
-					<polygon class="st7" points="170.2,317.5 197.5,265.6 231.5,284.2 204.8,335.8 	" />
-				</g>
-				<g id="P34">
-					<polygon class="st7" points="261.4,305.2 230,287.2 204.8,335.8 235.3,352.7 	" />
-				</g>
-				<g id="P33">
-					<polygon class="st7" points="293.4,322.3 261.4,305.2 235.3,352.7 267.8,370.5 	" />
-				</g>
-				<g id="P32">
-					<polygon class="st7" points="325.6,340 293.4,322.3 267.8,370.5 300,388 	" />
-				</g>
-				<g id="P31">
-					<polygon class="st8" points="358.2,358.2 325.6,340 300,388 332.3,405.7 	" />
-				</g>
-				<g id="P30">
-					<polygon class="st7" points="390,375 358.2,358.2 332.3,405.7 363.7,422.8 	" />
-				</g>
-				<g id="P29">
-					<polygon class="st7" points="418.5,390.5 390,375 363.7,422.8 393,438.8 	" />
-				</g>
-				<g id="P22">
-					<polygon class="st7" points="170.2,317.5 143.8,366.8 177.7,385.3 204.8,335.8 	" />
-				</g>
-				<g id="P23">
-					<polygon class="st7" points="235.3,352.7 204.8,335.8 180.1,380.9 211,397.7 	" />
-				</g>
-				<g id="P24">
-					<polygon class="st7" points="267.8,370.5 235.3,352.7 211,397.7 243.8,416 	" />
-				</g>
-				<g id="P25">
-					<polygon class="st7" points="300,388 267.8,370.5 243.8,416 276.5,432.8 	" />
-				</g>
-				<g id="P26">
-					<polygon class="st7" points="332.3,405.7 300,388 276.5,432.8 308.5,451.3 	" />
-				</g>
-				<g id="P27">
-					<polygon class="st7" points="363.7,422.8 332.3,405.7 308.5,451.3 339.7,467.8 	" />
-				</g>
-				<g id="P28">
-					<polygon class="st7" points="393,438.8 363.7,422.8 339.7,467.8 368.3,483.7 	" />
-				</g>
-				<g id="P21">
-					<polygon class="st7" points="143.8,366.8 117.3,417.2 151.2,435.3 177.7,385.3 	" />
-				</g>
-				<g id="P20">
-					<polygon class="st7" points="207.7,405.7 176.5,387.4 151.2,435.3 182,452.3 	" />
-				</g>
-				<g id="P19">
-					<polygon class="st7" points="240.2,423.7 207.7,405.7 182,452.3 215.5,470.3 	" />
-				</g>
-				<g id="P18">
-					<polygon class="st8" points="271.9,440.8 240.2,423.7 215.5,470.3 246.5,487.7 	" />
-				</g>
-				<g id="P17">
-					<polygon class="st7" points="304.4,458.8 271.9,440.8 246.5,487.7 279,506 	" />
-				</g>
-				<g id="P16">
-					<polygon class="st7" points="336.1,476.5 304.4,458.8 279,506 311.3,523 	" />
-				</g>
-				<g id="P15">
-					<polygon class="st7" points="365,491.8 336.1,476.5 311.3,523 339.7,537.4 	" />
-				</g>
-				<g id="P8">
-					<polygon class="st7" points="71.3,502.8 42.8,557.8 76,576 105.5,521.3 	" />
-				</g>
-				<g id="P9">
-					<polygon class="st7" points="136.5,538.3 105.5,521.3 78.4,571.5 109.5,588 	" />
-				</g>
-				<g id="P10">
-					<polygon class="st7" points="169.3,557 136.5,538.3 109.5,588 142,606.8 	" />
-				</g>
-				<g id="P11">
-					<polygon class="st7" points="201.3,573.8 169.3,557 142,606.8 174.5,624 	" />
-				</g>
-				<g id="P12">
-					<polygon class="st7" points="234,592 201.3,573.8 174.5,624 206.8,642 	" />
-				</g>
-				<g id="P13">
-					<polygon class="st7" points="265.3,608.8 234,592 206.8,642 238,658.8 	" />
-				</g>
-				<g id="P14">
-					<polygon class="st7" points="294.5,624 265.3,608.8 238,658.8 267.3,675 	" />
-				</g>
-				<g id="P1">
-					<polygon class="st7" points="263,682.3 234,667 208,716.8 236,733 	" />
-				</g>
-				<g id="P2">
-					<polygon class="st7" points="202.5,649.8 234,667 208,716.8 176.8,700 	" />
-				</g>
-				<g id="P3">
-					<polygon class="st7" points="170.5,632.3 202.5,649.8 176.8,700 143.8,682 	" />
-				</g>
-				<g id="P4">
-					<polygon class="st7" points="139.4,615 170.5,632.3 143.8,682 112,664.5 	" />
-				</g>
-				<g id="P5">
-					<polygon class="st7" points="105.5,596.8 139.4,615 112,664.5 78.4,647 	" />
-				</g>
-				<g id="P6">
-					<polygon class="st7" points="74.1,580.3 105.5,596.8 78.4,647 48,630.6 	" />
-				</g>
-				<g id="P7">
-					<polygon class="st7" points="42.8,557.8 76,576 48,630.6 13.5,612 	" />
-				</g>
-			</svg>
+        			c0.9,0.8,2.3,1.2,4,1.2c1.5,0,2.7-0.3,3.4-0.9C113.1,295.6,113.5,294.8,113.5,293.8z"/>
+        	</g>
+        	<g>
+        		<path class="st1" d="M59.5,240.6l3.9-18.9h4.3l-5.8,25.1h-4.2l-4.8-18.3L48,246.8h-4.2l-5.8-25.1h4.3l3.9,18.8l4.8-18.8h3.6
+        			L59.5,240.6z"/>
+        	</g>
+        </g>
+        <g id="Hintergrund">
+        	<polyline class="st2" points="337.5,2 2,633.8 509.8,909.5 821.2,130 337.5,2 	"/>
+        	<polyline class="st3" points="117.3,417.2 71.3,502.8 294.5,624 304.4,607.8 233.1,527.3 238,482.9 117.3,417.2 	"/>
+        	<polyline class="st4" points="238,482.9 339.7,537.4 304.4,607.8 233.1,527.3 238,482.9 	"/>
+        	<polyline class="st3" points="324.3,623.5 279,705.5 324.3,730 300,778.3 361.2,812.5 355,825.5 509.8,909.5 538.2,840.3
+        		422.8,781.2 324.3,623.5 	"/>
+        	<polyline class="st3" points="13.5,612 8.8,619.8 231.2,742 236,733 13.5,612 	"/>
+        	<polygon class="st5" points="8.8,619.8 2,633.8 224.5,753 231.2,742 	"/>
+        	<polygon class="st6" points="283.8,712 268.8,727.3 286.4,745.7 291.5,740.3 304.4,753 318.3,742 	"/>
+        	<polygon class="st5" points="300,778.3 293.6,790 355,825.5 361.2,812.5 	"/>
+        </g>
+        <g id="P65_1_">
+        	<polygon class="st7" points="375.5,13 340,78 373,96 413.4,20.6 	"/>
+        </g>
+        <g id="P64">
+        	<polygon class="st7" points="337.5,2 304.5,66 337.5,84 375.5,13 	"/>
+        </g>
+        <g id="P66">
+        	<polygon class="st7" points="413.4,20.6 448.2,31.7 404.8,114.3 373,96 	"/>
+        </g>
+        <g id="P67">
+        	<polygon class="st7" points="448.2,31.7 484.8,40.3 436.2,132.3 404.8,114.3 	"/>
+        </g>
+        <g id="P71">
+        	<polyline class="st7" points="484.8,40.3 538.8,54.5 511.8,111 461.7,84 484.8,40.3 	"/>
+        </g>
+        <g id="P72">
+        	<polyline class="st7" points="538.8,54.5 582.2,67.4 551.5,124.3 515.1,104.1 538.8,54.5 	"/>
+        </g>
+        <g id="P73">
+        	<polygon class="st7" points="582.2,67.4 612.8,75.7 582.2,140.3 551.5,124.3 	"/>
+        </g>
+        <g id="P74">
+        	<polygon class="st7" points="612.8,75.7 654.3,86 611.8,167.5 576.3,149.5 	"/>
+        </g>
+        <g id="P75">
+        	<polygon class="st7" points="654.3,86 689.3,95.3 642.2,183.3 611.8,167.5 	"/>
+        </g>
+        <g id="P78">
+        	<polygon class="st7" points="689.3,95.3 763.5,114.3 732.5,173.3 667,136.9 	"/>
+        </g>
+        <g id="P79">
+        	<polygon class="st7" points="763.5,114.3 821.2,130 792.3,205.3 732.5,173.3 	"/>
+        </g>
+        <g id="P76">
+        	<polygon class="st7" points="667,136.9 701.1,155.9 677.2,202 642.2,183.3 	"/>
+        </g>
+        <g id="P77">
+        	<polygon class="st7" points="701.1,155.9 729,171.4 705.5,216.7 677.2,202 	"/>
+        </g>
+        <g id="P80">
+        	<polygon class="st7" points="735.9,175.2 712.2,219.3 772.8,252 792.3,205.3 	"/>
+        </g>
+        <g id="P68">
+        	<polygon class="st7" points="494.6,101.7 469.8,149.5 436.2,132.3 461.7,84 	"/>
+        </g>
+        <g id="P69">
+        	<polygon class="st7" points="494.6,101.7 525.5,119.8 500.3,167.5 469.8,149.5 	"/>
+        </g>
+        <g id="P70">
+        	<polygon class="st7" points="525.5,119.8 554,135.8 529,183.3 500.3,167.5 	"/>
+        </g>
+        <g id="P143">
+        	<polygon class="st7" points="333.3,605.7 402.8,641.7 372.3,699 324.3,623.5 	"/>
+        </g>
+        <g id="P145">
+        	<polygon class="st7" points="357.8,559.1 333.3,605.7 368,622.5 393.3,578 	"/>
+        </g>
+        <g id="P144">
+        	<polygon class="st7" points="423.3,593.8 393.3,578 368,622.5 399.3,639.5 	"/>
+        </g>
+        <g id="P141">
+        	<polygon class="st7" points="431.8,598 407.5,642.6 437.8,660.3 461.8,613.8 	"/>
+        </g>
+        <g id="P142">
+        	<polygon class="st7" points="402.8,641.7 437.8,660.3 414.8,703.2 379.9,684.7 	"/>
+        </g>
+        <g id="P146">
+        	<polygon class="st7" points="379.9,684.7 448.7,721.2 419.2,775.3 372.3,699 	"/>
+        </g>
+        <g id="P139">
+        	<polygon class="st7" points="437.8,660.3 414.8,703.2 445.7,718.8 467.3,675 	"/>
+        </g>
+        <g id="P140">
+        	<polygon class="st7" points="492.5,629.1 461.8,613.8 437.8,660.3 467.3,675 	"/>
+        </g>
+        <g id="P137">
+        	<polygon class="st7" points="500.7,633.8 533.5,651 509.8,697.7 475.7,680 	"/>
+        </g>
+        <g id="P138">
+        	<polygon class="st7" points="475.7,680 453.2,722.5 486.2,740.3 509.8,697.7 	"/>
+        </g>
+        <g id="P147">
+        	<polygon class="st7" points="448.7,721.2 486.2,740.3 455.8,797.5 422.8,781.2 419.2,775.3 	"/>
+        </g>
+        <g id="P148">
+        	<polygon class="st7" points="486.2,740.3 521,758.7 491,816.2 455.8,797.5 	"/>
+        </g>
+        <g id="P135">
+        	<polygon class="st7" points="540.3,713.7 518.2,757 486.2,740.3 509.8,697.7 	"/>
+        </g>
+        <g id="P136">
+        	<polygon class="st7" points="564.7,667.7 533.5,651 509.8,697.7 540.3,713.7 	"/>
+        </g>
+        <g id="P149">
+        	<polygon class="st7" points="538.2,840.3 562.3,780 521,758.7 491,816.2 	"/>
+        </g>
+        <g id="P134">
+        	<polygon class="st7" points="562.3,780 580.8,734.8 548.3,717.7 526,760.7 	"/>
+        </g>
+        <g id="P133">
+        	<polygon class="st7" points="603.5,677.5 580.8,734.8 548.3,717.7 577.3,663.6 	"/>
+        </g>
+        <g id="P126">
+        	<polygon class="st7" points="387,504.9 362.5,551.2 396.7,570 421.5,523 	"/>
+        </g>
+        <g id="P127">
+        	<polygon class="st7" points="452.5,539.3 428.3,586 396.7,570 421.5,523 	"/>
+        </g>
+        <g id="P128">
+        	<polygon class="st7" points="486.9,556.6 463,604 428.3,586 452.5,539.3 	"/>
+        </g>
+        <g id="P129">
+        	<polygon class="st7" points="518.8,573.6 494.7,619.8 463,604 486.9,556.6 	"/>
+        </g>
+        <g id="P130">
+        	<polygon class="st7" points="551.4,591 527,637.8 494.7,619.8 518.8,573.6 	"/>
+        </g>
+        <g id="P131">
+        	<polygon class="st7" points="583.1,607.8 559,654 527,637.8 551.4,591 	"/>
+        </g>
+        <g id="P132">
+        	<polygon class="st7" points="622.6,627.9 603.5,677.5 559,654 583.1,607.8 	"/>
+        </g>
+        <g id="P125">
+        	<polygon class="st7" points="412.3,458.8 387,504.9 421.5,523 446.6,476.5 	"/>
+        </g>
+        <g id="P124">
+        	<polygon class="st7" points="477.8,492.8 446.6,476.5 421.5,523 452.5,539.3 	"/>
+        </g>
+        <g id="P123">
+        	<polygon class="st7" points="513,511 477.8,492.8 452.5,539.3 486.9,556.6 	"/>
+        </g>
+        <g id="P122">
+        	<polygon class="st7" points="544.2,527.3 513,511 486.9,556.6 518.8,573.6 	"/>
+        </g>
+        <g id="P121">
+        	<polygon class="st7" points="576,544.3 544.2,527.3 518.8,573.6 551.4,591 	"/>
+        </g>
+        <g id="P120">
+        	<polygon class="st7" points="576,544.3 608.3,560.8 583.1,607.8 551.4,591 	"/>
+        </g>
+        <g id="P119">
+        	<polygon class="st7" points="610.1,557.3 583.1,607.8 622.6,627.9 644.1,575.6 	"/>
+        </g>
+        <g id="P112">
+        	<polygon class="st7" points="440.5,404.6 416.1,450.5 450.4,468.6 475.2,422.8 	"/>
+        </g>
+        <g id="P113">
+        	<polygon class="st7" points="506.5,438.8 482.1,485.3 450.4,468.6 475.2,422.8 	"/>
+        </g>
+        <g id="P114">
+        	<polygon class="st7" points="540.8,456.7 516.4,502.9 482.1,485.3 506.5,438.8 	"/>
+        </g>
+        <g id="P115">
+        	<polygon class="st7" points="572,473 548.4,519.6 516.4,502.9 540.8,456.7 	"/>
+        </g>
+        <g id="P116">
+        	<polygon class="st7" points="604.7,490 581,536.6 548.4,519.6 572,473 	"/>
+        </g>
+        <g id="P117">
+        	<polygon class="st7" points="637,507 612,553.4 581,536.6 604.7,490 	"/>
+        </g>
+        <g id="P118">
+        	<polygon class="st7" points="665.7,521.7 644.1,575.6 610.1,557.3 637,507 	"/>
+        </g>
+        <g id="P111">
+        	<polygon class="st7" points="465.5,358.8 500.2,376.5 475.2,422.8 440.5,404.6 	"/>
+        </g>
+        <g id="P110">
+        	<polygon class="st7" points="530.8,393 500.2,376.5 475.2,422.8 506.5,438.8 	"/>
+        </g>
+        <g id="P109">
+        	<polygon class="st7" points="565.8,411.3 530.8,393 506.5,438.8 540.8,456.7 	"/>
+        </g>
+        <g id="P108">
+        	<polygon class="st7" points="597.2,427.3 565.8,411.3 540.8,456.7 572,473 	"/>
+        </g>
+        <g id="P107">
+        	<polygon class="st7" points="629.3,444.7 597.2,427.3 572,473 604.7,490 	"/>
+        </g>
+        <g id="P106">
+        	<polygon class="st7" points="661,461 629.3,444.7 604.7,490 637,507 	"/>
+        </g>
+        <g id="P105">
+        	<polygon class="st8" points="688.3,465 665.7,521.7 637,507 665.7,453.1 	"/>
+        </g>
+        <g id="P99">
+        	<polygon class="st7" points="494,303.5 469.7,350.2 503.8,368.8 529,322.2 	"/>
+        </g>
+        <g id="P100">
+        	<polygon class="st7" points="559.3,338.2 535.2,385.2 503.8,368.8 529,322.2 	"/>
+        </g>
+        <g id="P101">
+        	<polygon class="st7" points="593.8,356.5 569.7,403.2 535.2,385.2 559.3,338.2 	"/>
+        </g>
+        <g id="P102">
+        	<polygon class="st7" points="626.2,372.8 601.7,419.2 569.7,403.2 593.8,356.5 	"/>
+        </g>
+        <g id="P103">
+        	<polygon class="st7" points="658.7,389.5 634,436.3 601.7,419.2 626.2,372.8 	"/>
+        </g>
+        <g id="_x31_04">
+        	<polygon class="st7" points="707.9,416 688.3,465 634,436.3 658.7,389.5 	"/>
+        </g>
+        <g id="P98">
+        	<polygon class="st7" points="519.2,257 494,303.5 529,322.2 553.8,275.5 	"/>
+        </g>
+        <g id="P97">
+        	<polygon class="st7" points="585.3,291.7 553.8,275.5 529,322.2 559.3,338.2 	"/>
+        </g>
+        <g id="P96">
+        	<polygon class="st7" points="619.7,309.3 585.3,291.7 559.3,338.2 593.8,356.5 	"/>
+        </g>
+        <g id="P95">
+        	<polygon class="st7" points="651,325.7 619.7,309.3 593.8,356.5 626.2,372.8 	"/>
+        </g>
+        <g id="P94">
+        	<polygon class="st7" points="651,325.7 683.5,342.5 658.7,389.5 626.2,372.8 	"/>
+        </g>
+        <g id="P93">
+        	<polygon class="st7" points="685.2,339.3 658.7,389.5 707.9,416 729.7,362.2 	"/>
+        </g>
+        <g id="P87">
+        	<polygon class="st7" points="548.6,203.3 523.3,248.3 557.7,267.5 582.2,221.7 	"/>
+        </g>
+        <g id="P88">
+        	<polygon class="st7" points="612.8,237.7 589.5,283.2 557.7,267.5 582.2,221.7 	"/>
+        </g>
+        <g id="P89">
+        	<polygon class="st7" points="647.5,255.7 624.2,301.5 589.5,283.2 612.8,237.7 	"/>
+        </g>
+        <g id="P90">
+        	<polygon class="st7" points="679.7,272.3 655.5,318 624.2,301.5 647.5,255.7 	"/>
+        </g>
+        <g id="P91">
+        	<polygon class="st7" points="711.5,289.2 687.8,334.7 655.5,318 679.7,272.3 	"/>
+        </g>
+        <g id="P92">
+        	<polygon class="st7" points="750.3,309.3 729.7,362.2 685.2,339.3 711.5,289.2 	"/>
+        </g>
+        <g id="P86_1_">
+        	<polygon class="st7" points="572.5,157.7 606.8,175.2 582.2,221.7 548.6,203.3 	"/>
+        </g>
+        <g id="P85">
+        	<polygon class="st7" points="637.8,192 606.8,175.2 582.2,221.7 612.8,237.7 	"/>
+        </g>
+        <g id="P84">
+        	<polygon class="st7" points="672.5,210 637.8,192 613.5,236.4 647.5,255.7 	"/>
+        </g>
+        <g id="P83">
+        	<polygon class="st7" points="704,226.2 672.5,210 647.5,255.7 679.7,272.3 	"/>
+        </g>
+        <g id="P82">
+        	<polygon class="st7" points="736.2,242.8 704,226.2 679.7,272.3 711.5,289.2 	"/>
+        </g>
+        <g id="P81">
+        	<polygon class="st7" points="772.8,252 750.3,309.3 711.5,289.2 741.2,235 	"/>
+        </g>
+        <g id="P63">
+        	<polygon class="st7" points="304.5,66 278,114.3 312.5,133.5 337.5,84 	"/>
+        </g>
+        <g id="P62">
+        	<polygon class="st7" points="367.5,105.2 336.1,86.9 312.5,133.5 343,150.3 	"/>
+        </g>
+        <g id="P61">
+        	<polygon class="st7" points="400.3,122.7 367.5,105.2 343,150.3 375.5,168.7 	"/>
+        </g>
+        <g id="P60">
+        	<polygon class="st8" points="432.5,140.3 400.3,122.7 375.5,168.7 407.7,185.7 	"/>
+        </g>
+        <g id="P59">
+        	<polygon class="st7" points="465.4,158.5 432.5,140.3 407.7,185.7 439.8,203.3 	"/>
+        </g>
+        <g id="P58">
+        	<polygon class="st7" points="496.2,175.2 465.4,158.5 439.8,203.3 471.5,220.5 	"/>
+        </g>
+        <g id="P57">
+        	<polygon class="st7" points="525.5,190.8 496.2,175.2 471.5,220.5 500.3,236.7 	"/>
+        </g>
+        <g id="P50">
+        	<polygon class="st7" points="278,114.3 250.7,165.3 284.8,184.3 312.5,133.5 	"/>
+        </g>
+        <g id="P51">
+        	<polygon class="st7" points="312.5,133.5 287.7,180.7 318.2,197.2 343,150.3 	"/>
+        </g>
+        <g id="P52">
+        	<polygon class="st7" points="343,150.3 318.2,197.2 351.7,215 375.5,168.7 	"/>
+        </g>
+        <g id="P53">
+        	<polygon class="st7" points="375.5,168.7 351.7,215 383.2,232.3 407.7,185.7 	"/>
+        </g>
+        <g id="P54">
+        	<polygon class="st7" points="407.7,185.7 383.2,232.3 415.7,250 439.8,203.3 	"/>
+        </g>
+        <g id="P55">
+        	<polygon class="st7" points="439.8,203.3 415.7,250 446.7,266.8 471.5,220.5 	"/>
+        </g>
+        <g id="P56">
+        	<polygon class="st7" points="475.7,283.2 500.3,236.7 471.5,220.5 446.7,266.8 	"/>
+        </g>
+        <g id="P49">
+        	<polygon class="st7" points="223.8,216.8 250.7,165.3 284.8,184.3 258.3,234.3 	"/>
+        </g>
+        <g id="P48">
+        	<polygon class="st7" points="314.2,205 281.6,187.7 258.3,234.3 288.8,251.8 	"/>
+        </g>
+        <g id="P47">
+        	<polygon class="st7" points="346.8,223.2 314.2,205 288.8,251.8 321.7,269.2 	"/>
+        </g>
+        <g id="P46">
+        	<polygon class="st7" points="378.8,240.3 346.8,223.2 321.7,269.2 353.5,287.2 	"/>
+        </g>
+        <g id="P45">
+        	<polygon class="st7" points="411.5,258.2 378.8,240.3 353.5,287.2 386.3,305.2 	"/>
+        </g>
+        <g id="P44">
+        	<polygon class="st7" points="442.8,275.5 411.5,258.2 386.3,305.2 417.7,322.2 	"/>
+        </g>
+        <g id="P43">
+        	<polygon class="st7" points="472,290.2 442.8,275.5 417.7,322.2 446.7,337.5 	"/>
+        </g>
+        <g id="P36">
+        	<polygon class="st7" points="223.8,216.8 197.5,265.6 231.5,284.2 258.3,234.3 	"/>
+        </g>
+        <g id="P37">
+        	<polygon class="st7" points="258.3,234.3 288.8,251.8 265.2,296.8 234,280.2 	"/>
+        </g>
+        <g id="P38">
+        	<polygon class="st7" points="288.8,251.8 321.7,269.2 297.7,314.5 265.2,296.8 	"/>
+        </g>
+        <g id="P39">
+        	<polygon class="st7" points="321.7,269.2 353.5,287.2 330,332.3 297.7,314.5 	"/>
+        </g>
+        <g id="P40">
+        	<polygon class="st7" points="353.5,287.2 386.3,305.2 362.3,350 330,332.3 	"/>
+        </g>
+        <g id="P41">
+        	<polygon class="st7" points="386.3,305.2 417.7,322.2 393.8,367.3 362.3,350 	"/>
+        </g>
+        <g id="P42">
+        	<polygon class="st7" points="422.7,382.8 446.7,337.5 417.7,322.2 393.8,367.3 	"/>
+        </g>
+        <g id="P35">
+        	<polygon class="st7" points="170.2,317.5 197.5,265.6 231.5,284.2 204.8,335.8 	"/>
+        </g>
+        <g id="P34">
+        	<polygon class="st7" points="261.4,305.2 230,287.2 204.8,335.8 235.3,352.7 	"/>
+        </g>
+        <g id="P33">
+        	<polygon class="st7" points="293.4,322.3 261.4,305.2 235.3,352.7 267.8,370.5 	"/>
+        </g>
+        <g id="P32">
+        	<polygon class="st7" points="325.6,340 293.4,322.3 267.8,370.5 300,388 	"/>
+        </g>
+        <g id="P31">
+        	<polygon class="st8" points="358.2,358.2 325.6,340 300,388 332.3,405.7 	"/>
+        </g>
+        <g id="P30">
+        	<polygon class="st7" points="390,375 358.2,358.2 332.3,405.7 363.7,422.8 	"/>
+        </g>
+        <g id="P29">
+        	<polygon class="st7" points="418.5,390.5 390,375 363.7,422.8 393,438.8 	"/>
+        </g>
+        <g id="P22">
+        	<polygon class="st7" points="170.2,317.5 143.8,366.8 177.7,385.3 204.8,335.8 	"/>
+        </g>
+        <g id="P23">
+        	<polygon class="st7" points="235.3,352.7 204.8,335.8 180.1,380.9 211,397.7 	"/>
+        </g>
+        <g id="P24">
+        	<polygon class="st7" points="267.8,370.5 235.3,352.7 211,397.7 243.8,416 	"/>
+        </g>
+        <g id="P25">
+        	<polygon class="st7" points="300,388 267.8,370.5 243.8,416 276.5,432.8 	"/>
+        </g>
+        <g id="P26">
+        	<polygon class="st7" points="332.3,405.7 300,388 276.5,432.8 308.5,451.3 	"/>
+        </g>
+        <g id="P27">
+        	<polygon class="st7" points="363.7,422.8 332.3,405.7 308.5,451.3 339.7,467.8 	"/>
+        </g>
+        <g id="P28">
+        	<polygon class="st7" points="393,438.8 363.7,422.8 339.7,467.8 368.3,483.7 	"/>
+        </g>
+        <g id="P21">
+        	<polygon class="st7" points="143.8,366.8 117.3,417.2 151.2,435.3 177.7,385.3 	"/>
+        </g>
+        <g id="P20">
+        	<polygon class="st7" points="207.7,405.7 176.5,387.4 151.2,435.3 182,452.3 	"/>
+        </g>
+        <g id="P19">
+        	<polygon class="st7" points="240.2,423.7 207.7,405.7 182,452.3 215.5,470.3 	"/>
+        </g>
+        <g id="P18">
+        	<polygon class="st8" points="271.9,440.8 240.2,423.7 215.5,470.3 246.5,487.7 	"/>
+        </g>
+        <g id="P17">
+        	<polygon class="st7" points="304.4,458.8 271.9,440.8 246.5,487.7 279,506 	"/>
+        </g>
+        <g id="P16">
+        	<polygon class="st7" points="336.1,476.5 304.4,458.8 279,506 311.3,523 	"/>
+        </g>
+        <g id="P15">
+        	<polygon class="st7" points="365,491.8 336.1,476.5 311.3,523 339.7,537.4 	"/>
+        </g>
+        <g id="P8">
+        	<polygon class="st7" points="71.3,502.8 42.8,557.8 76,576 105.5,521.3 	"/>
+        </g>
+        <g id="P9">
+        	<polygon class="st7" points="136.5,538.3 105.5,521.3 78.4,571.5 109.5,588 	"/>
+        </g>
+        <g id="P10">
+        	<polygon class="st7" points="169.3,557 136.5,538.3 109.5,588 142,606.8 	"/>
+        </g>
+        <g id="P11">
+        	<polygon class="st7" points="201.3,573.8 169.3,557 142,606.8 174.5,624 	"/>
+        </g>
+        <g id="P12">
+        	<polygon class="st7" points="234,592 201.3,573.8 174.5,624 206.8,642 	"/>
+        </g>
+        <g id="P13">
+        	<polygon class="st7" points="265.3,608.8 234,592 206.8,642 238,658.8 	"/>
+        </g>
+        <g id="P14">
+        	<polygon class="st7" points="294.5,624 265.3,608.8 238,658.8 267.3,675 	"/>
+        </g>
+        <g id="P1">
+        	<polygon class="st7" points="263,682.3 234,667 208,716.8 236,733 	"/>
+        </g>
+        <g id="P2">
+        	<polygon class="st7" points="202.5,649.8 234,667 208,716.8 176.8,700 	"/>
+        </g>
+        <g id="P3">
+        	<polygon class="st7" points="170.5,632.3 202.5,649.8 176.8,700 143.8,682 	"/>
+        </g>
+        <g id="P4">
+        	<polygon class="st7" points="139.4,615 170.5,632.3 143.8,682 112,664.5 	"/>
+        </g>
+        <g id="P5">
+        	<polygon class="st7" points="105.5,596.8 139.4,615 112,664.5 78.4,647 	"/>
+        </g>
+        <g id="P6">
+        	<polygon class="st7" points="74.1,580.3 105.5,596.8 78.4,647 48,630.6 	"/>
+        </g>
+        <g id="P7">
+        	<polygon class="st7" points="42.8,557.8 76,576 48,630.6 13.5,612 	"/>
+        </g>
+        </svg>
 
-			<div class="uk-width-1-2@m" uk-dropdown="toggle: #P105">
-				<h3 class="uk-card-title">Parzelle 105</h3>
-				<p>Gartenfläche 150 qm</p>
-				<p>Laube 14 qm</p>
-				<p>Stromanschluss vorhanden</p>
-				<p>Pachtzins 490 €/Jahr</p>
-				<p>Nebenkosten: 350 €/Jahr</p>
-			</div>
+        <div class="uk-width-1-2@m" uk-dropdown="toggle: #P105">
+          <h3 class="uk-card-title">Parzelle 105</h3>
+          <p>Gartenfläche 150 qm</p>
+          <p>Laube 14 qm</p>
+          <p>Stromanschluss vorhanden</p>
+          <p>Pachtzins 490 €/Jahr</p>
+          <p>Nebenkosten: 350 €/Jahr</p>
+        </div>
 
-			<div class="uk-width-1-2@m" uk-dropdown="toggle: #P31">
-				<h3 class="uk-card-title">Parzelle 31</h3>
-				<p>Gartenfläche 200 qm</p>
-				<p>Laube 20 qm</p>
-				<p>Stromanschluss vorhanden</p>
-				<p>Pachtzins 590 €/Jahr</p>
-				<p>Nebenkosten: 350 €/Jahr</p>
-			</div>
+        <div class="uk-width-1-2@m" uk-dropdown="toggle: #P31">
+          <h3 class="uk-card-title">Parzelle 31</h3>
+          <p>Gartenfläche 200 qm</p>
+          <p>Laube 20 qm</p>
+          <p>Stromanschluss vorhanden</p>
+          <p>Pachtzins 590 €/Jahr</p>
+          <p>Nebenkosten: 350 €/Jahr</p>
+        </div>
 
-			<div class="uk-width-1-2@m" uk-dropdown="toggle: #P18">
-				<h3 class="uk-card-title">Parzelle 18</h3>
-				<p>Gartenfläche 200 qm</p>
-				<p>Laube 23 qm</p>
-				<p>Stromanschluss vorhanden</p>
-				<p>Pachtzins 590 €/Jahr</p>
-				<p>Nebenkosten: 350 €/Jahr</p>
-			</div>
+        <div class="uk-width-1-2@m" uk-dropdown="toggle: #P18">
+          <h3 class="uk-card-title">Parzelle 18</h3>
+          <p>Gartenfläche 200 qm</p>
+          <p>Laube 23 qm</p>
+          <p>Stromanschluss vorhanden</p>
+          <p>Pachtzins 590 €/Jahr</p>
+          <p>Nebenkosten: 350 €/Jahr</p>
+        </div>
 
-			<div class="uk-width-1-2@m" uk-dropdown="toggle: #P60">
-				<h3 class="uk-card-title">Parzelle 60</h3>
-				<p>Gartenfläche 200 qm</p>
-				<p>Laube 21 qm</p>
-				<p>Stromanschluss vorhanden</p>
-				<p>Pachtzins 595 €/Jahr</p>
-				<p>Nebenkosten: 350 €/Jahr</p>
-			</div>
-		</div>
-	</div>
+        <div class="uk-width-1-2@m" uk-dropdown="toggle: #P60">
+          <h3 class="uk-card-title">Parzelle 60</h3>
+          <p>Gartenfläche 200 qm</p>
+          <p>Laube 21 qm</p>
+          <p>Stromanschluss vorhanden</p>
+          <p>Pachtzins 595 €/Jahr</p>
+          <p>Nebenkosten: 350 €/Jahr</p>
+        </div>
+    </div>
+  </div>
+
+  <hr class="uk-divider-icon">
+
+  <div id="urbangardening" class="uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-background-cover" data-src="assets/urbangardening.jpg" uk-img uk-parallax="bgy: -500">
+    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+      <h3 class="uk-card-title">URBAN GARDENING</h3>
+      <p>
+        Ein modernes, umweltbewusstes Gartenkonzept für Menschen in Hamburg-Schnelsen. Sei dabei!
+      </p>
+    </div>
+    <div class="uk-button-group">
+      <button class="uk-button uk-button-primary">UG - IM KGV</button>
+      <button class="uk-button uk-button-primary">ANGEBOTE/TERMINE</button>
+    </div>
+  </div>
+
+  <hr class="uk-divider-icon">
+
+  <div id="urbangardening" class="uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-background-cover" data-src="assets/urbangardening1.jpg" uk-img uk-parallax="bgy: -500">
+    <div class="uk-card uk-card-default uk-card-body uk-width-1-3@m">
+      <h3 class="uk-card-title">Urban Gardening im Kleingartenverein</h3>
+      <p>
+        „Urban Gardening“, also urbanes Gärtnern, bezeichnet die Nutzung von (zumeist kleineren) Flächen in Städten zum Anbau von Gemüse, Obst und Kräutern.
+      </p>
+    </div>
+
+    <div class="uk-margin-large-top uk-card uk-card-default uk-card-body uk-width-1-3@m">
+      <ul uk-accordion>
+        <li>
+            <a class="uk-accordion-title" href="#">„Urban Gardening“ in Hamburg</a>
+            <div class="uk-accordion-content">
+              <p>Das Phänomen „Urban Gardening“ ist mittlerweile auch in Hamburg angekommen. Sogar die Hamburger Politik hat sich inzwischen dieses Themas angenommen. So schreibt das Konzept „Mehr Stadt in der Stadt – Gemeinsam zu mehr Freiraumqualität in Hamburg“ urbaner Gartenwirtschaft eine zunehmende Bedeutung zu. Auch die einzelnen Bezirke wurden kürzlich angefragt, mehr Nutzpflanzen anzubauen.</p>
+            </div>
+        </li>
+        <li>
+          <a class="uk-accordion-title" href="#">„Urban Gardening“ in Schnelsen</a>
+          <div class="uk-accordion-content">
+            <p>
+              Andere Städte wie London oder Berlin haben zwar deutlich mehr urbane Garten-Projekte als Hamburg, aber auch in Hamburg gibt es mittlerweile mehr als ein Dutzend solcher Projekte in den verschiedensten Stadtteilen - so auch in Schnelsen. Hier haben wir es uns zur Aufgabe gemacht, den auf der A7 entstandenen Deckel für verschiedene Zielgruppen nutzbar zu machen und den Stadtteil damit sowohl attraktiver als auch umweltbewusster zu gestalten. Ein Stadtteil von Menschen für Menschen, jung und alt, die gemeinsam Lust haben, Natur innovativ nutzbar zu machen. Daher laden wir Kindergärten, Schulen, Nachbarn, Familien und alle an dieser Idee interessierten Menschen dazu ein, sich in unserem Verein [zur Unterseite Kleingartenverein verlinken] zu engagieren.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <a href="#">
+      <div class="uk-margin-large-top uk-card uk-card-primary uk-card-body uk-width-2-3@m">
+        <h3 class="uk-card-title">Stöbern Sie doch gleich mal in unseren verschiedenen Angeboten – wir freuen uns auf Sie!</h3>
+      </div>
+    </a>
+  </div>
 </body>
 
 </html>

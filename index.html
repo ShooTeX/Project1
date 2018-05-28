@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.2/css/uikit.min.css" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="css/master.css">
 
     <!-- UIkit JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.2/js/uikit.min.js"></script>
@@ -20,14 +20,21 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
-<body class="uk-height-1-1">
-    <nav class="uk-navbar-container" uk-navbar>
+<body>
+    <nav class="uk-navbar-container" uk-navbar uk-sticky>
         <div class="uk-navbar-left">
 
             <img src="assets/logo3.svg" width="90" height="60" alt="" uk-svg>
             <ul class="uk-navbar-nav">
                 <li class="uk-active">
-                    <a href="#">Kleingartenverein</a>
+                    <a href="#">Kleingartenverein <span uk-icon="icon: chevron-down"></span></a>
+                    <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="#">Verein</a></li>
+                        <li><a href="#">Termine</a></li>
+                        <li><a href="#">Parzellenverwaltung</a></li>
+                      </ul>
+                    </div>
                 </li>
                 <li>
                     <a href="#">Urban Gardening</a>
@@ -46,7 +53,7 @@
         </div>
     </nav>
 
-    <div class="uk-height-1-1 uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="assets/deckel_luftbild.jpg" uk-img>
+    <div class="uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-background-cover uk-light" data-src="assets/deckel_luftbild.jpg" uk-img>
         <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
             <h3 class="uk-card-title">Wir sind da für unsere Mitglieder und für unsere Nachbarn.</h3>
             <p>
@@ -56,6 +63,10 @@
             <p>
                 <b>Karl Foerster</b>
             </p>
+        </div>
+        <div class="uk-button-group">
+          <button class="uk-button uk-button-primary">URBAN GARDENING</button>
+          <button class="uk-button uk-button-primary">PARZELLE MIETEN</button>
         </div>
     </div>
 </body>

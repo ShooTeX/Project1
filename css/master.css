@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 .st0 {
     fill: none;
     stroke: #2ECC71;
@@ -51,3 +59,37 @@
     stroke: #D1D1D1;
     stroke-width: 3;
     stroke-miterlimit: 10;
+}
+
+.footer {
+    width: 100%;
+    padding: 0.5em;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #2ECC71;
+    color: #fff;
+}
+
+.footer-placeholder,
+.footer-links,
+.footer-copyright {
+    flex: 1;
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+.footer-links {
+    text-align: right;
+    padding-right: 3em;
+}
+
+.footer-link,
+.footer-link:hover,
+.footer-link:visited,
+.footer-link:link {
+    color: inherit;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+}
